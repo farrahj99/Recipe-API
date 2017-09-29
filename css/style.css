@@ -1,0 +1,178 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+.user {
+  text-align: center;
+}
+
+.user{
+  font-size: 1.4em;
+}
+
+header {
+
+  background-image: url("../images/taco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -80px;
+  height: 300px;
+  padding: 40px;
+
+}
+
+h1 {
+  border: 2px solid white;
+  color: white;
+  font-weight: 900;
+  font-family: 'Slabo 27px', serif;
+  font-size: 4.3em;
+  background-color: tan;
+  width: 50%;
+  border-radius: 6px;
+  margin-left: 300px;
+}
+
+h2 {
+  color: tan;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.user {
+  padding: 20px;
+  border: .50px solid #eedfcc;
+  height: 60px;
+  background-color: #faebd7;
+}
+
+button {
+  background-color: tan;
+  font-size: .8em;
+  color: white;
+  border-radius: 4px;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+section{
+
+  text-align:center;
+}
+
+.outerFrame{
+  border: 1px solid black;
+  width: 38%;
+  height: 300px;
+  display: inline-block;
+  border: none;
+  margin-right: 60px;
+}
+
+.frame{
+  border: 1px solid black;
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+  margin-right: 60px;
+  overflow: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.banner{
+  width: 100%;
+  border: 1px solid black;
+  height: 60px;
+  margin-top: 30px;
+  background-color: #faebd7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+.banner p{
+  text-align: center;
+  font-size: 1.4em;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.imageFrame{
+  width: 15%;
+  display: block;
+  margin: 30px auto;
+  height: 150px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -15px;
+}
+
+.recipe li{
+  list-style: none;
+  line-height: 2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.recipe li:hover{
+  border-bottom: 3px solid tan;
+  display: inline-block;
+}
+
+.ingredient li{
+  list-style: none;
+  line-height: 2;
+}
